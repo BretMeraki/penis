@@ -1,0 +1,902 @@
+2025-05-06 13:17:25,798 WARNING forest_app.core.logging_tracking: Token received successfully.
+2025-05-06 13:17:25,798 WARNING forest_app.core.logging_tracking: Token received successfully.
+2025-05-06 13:17:25,839 WARNING forest_app.core.logging_tracking: User details fetched. Status: completed
+2025-05-06 13:17:25,839 WARNING forest_app.core.logging_tracking: User details fetched. Status: completed
+2025-05-06 13:17:25,850 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 455, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:25,850 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 455, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:25,897 WARNING forest_app.front_end.api_client: API Success Response (200) for http://localhost:8000/onboarding/current_batch was JSON but not dict/list: <class 'list'>
+2025-05-06 13:17:25,897 WARNING forest_app.front_end.api_client: API Success Response (200) for http://localhost:8000/onboarding/current_batch was JSON but not dict/list: <class 'list'>
+2025-05-06 13:17:25,897 WARNING forest_app.front_end.api_client: API Success Response (200) for http://localhost:8000/onboarding/current_batch was JSON but not dict/list: <class 'list'>
+2025-05-06 13:17:27,291 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:17:27,291 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:17:27,294 WARNING forest_app.core.processors.completion_processor: Task race_day_d9e5f6g7 not found in backlog
+2025-05-06 13:17:27,294 WARNING forest_app.core.processors.completion_processor: Task race_day_d9e5f6g7 not found in backlog
+2025-05-06 13:17:27,296 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,296 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,296 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,296 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,298 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:27,298 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:27,298 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:27,298 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:27,912 WARNING forest_app.core.processors.completion_processor: Task training_b8c4d5e6 not found in backlog
+2025-05-06 13:17:27,912 WARNING forest_app.core.processors.completion_processor: Task training_b8c4d5e6 not found in backlog
+2025-05-06 13:17:27,914 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,914 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,914 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,914 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,914 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,914 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:27,916 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:27,916 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:27,916 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:27,916 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:27,916 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:27,916 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:28,472 WARNING forest_app.core.processors.completion_processor: Task prep_a7b3c2d9 not found in backlog
+2025-05-06 13:17:28,472 WARNING forest_app.core.processors.completion_processor: Task prep_a7b3c2d9 not found in backlog
+2025-05-06 13:17:28,473 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:28,473 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:28,473 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:28,473 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:28,473 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:28,473 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:28,473 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:28,473 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:17:28,473 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:28,473 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:28,473 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:28,473 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:28,473 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:28,473 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:28,473 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:17:28,473 ERROR __main__: Fatal error in streamlit_app.py startup:
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/front_end/streamlit_app.py", line 712, in <module>
+    st.rerun()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/commands/execution_control.py", line 150, in rerun
+    st.empty()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 414, in wrapped_func
+    raise ex
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/elements/empty.py", line 75, in empty
+    return self.dg._enqueue("empty", empty_proto)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 462, in _enqueue
+    _enqueue_message(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/delta_generator.py", line 736, in _enqueue_message
+    ctx.enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_run_context.py", line 158, in enqueue
+    self._enqueue(msg)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 340, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 376, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.exceptions.RerunException: RerunData(query_string='token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJicmV0bWVyYWtpQGljbG91ZC5jb20iLCJleHAiOjE3NDY1NTU0NDV9.RrIposgPR4tbGq0iRtM0nNEu-iEYMQTr3x-Qhf44R8o', page_script_hash='c9f9b5816e9016eff2aaa94ac13bdd68', is_fragment_scoped_rerun=True)
+2025-05-06 13:21:22,108 WARNING forest_app.core.logging_tracking: SENTRY_DSN environment variable not found. Sentry integration skipped.
+2025-05-06 13:25:20,203 WARNING forest_app.core.logging_tracking: SENTRY_DSN environment variable not found. Sentry integration skipped.
+2025-05-06 13:26:53,663 WARNING forest_app.core.logging_tracking: SENTRY_DSN environment variable not found. Sentry integration skipped.
+2025-05-06 13:27:12,621 WARNING forest_app.core.logging_tracking: SENTRY_DSN environment variable not found. Sentry integration skipped.
+2025-05-06 13:31:50,198 WARNING forest_app.core.logging_tracking: SENTRY_DSN environment variable not found. Sentry integration skipped.
+2025-05-06 13:33:22,739 WARNING forest_app.core.logging_tracking: Token received successfully.
+2025-05-06 13:33:22,739 WARNING forest_app.core.logging_tracking: Token received successfully.
+2025-05-06 13:33:22,774 WARNING forest_app.core.logging_tracking: User details fetched. Status: completed
+2025-05-06 13:33:22,774 WARNING forest_app.core.logging_tracking: User details fetched. Status: completed
+2025-05-06 13:33:22,811 WARNING forest_app.front_end.api_client: API Success Response (200) for http://localhost:8000/onboarding/current_batch was JSON but not dict/list: <class 'list'>
+2025-05-06 13:33:22,811 WARNING forest_app.front_end.api_client: API Success Response (200) for http://localhost:8000/onboarding/current_batch was JSON but not dict/list: <class 'list'>
+2025-05-06 13:33:24,305 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:33:24,305 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:33:24,308 WARNING forest_app.core.processors.completion_processor: Task race_day_d9e5f6g7 not found in backlog
+2025-05-06 13:33:24,308 WARNING forest_app.core.processors.completion_processor: Task race_day_d9e5f6g7 not found in backlog
+2025-05-06 13:33:24,311 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:24,311 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:24,311 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:26,718 WARNING forest_app.core.processors.completion_processor: Task training_b8c4d5e6 not found in backlog
+2025-05-06 13:33:26,718 WARNING forest_app.core.processors.completion_processor: Task training_b8c4d5e6 not found in backlog
+2025-05-06 13:33:26,721 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:26,721 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:26,721 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:26,721 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:26,721 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:28,489 WARNING forest_app.core.processors.completion_processor: Task prep_a7b3c2d9 not found in backlog
+2025-05-06 13:33:28,489 WARNING forest_app.core.processors.completion_processor: Task prep_a7b3c2d9 not found in backlog
+2025-05-06 13:33:28,492 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:28,492 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:28,492 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:28,492 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:28,492 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:28,492 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:33:28,492 WARNING forest_app.front_end.api_client: HTTP Error 404 calling http://localhost:8000/core/complete_task. Detail: Task not found in backlog
+2025-05-06 13:40:23,016 WARNING forest_app.core.logging_tracking: SENTRY_DSN environment variable not found. Sentry integration skipped.
+2025-05-06 13:43:11,275 WARNING forest_app.core.logging_tracking: SENTRY_DSN environment variable not found. Sentry integration skipped.
+2025-05-06 13:44:26,396 WARNING forest_app.core.logging_tracking: SENTRY_DSN environment variable not found. Sentry integration skipped.
+2025-05-06 13:44:26,437 CRITICAL forest_app.core.processors.reflection_processor: ReflectionProcessor initialized with invalid or dummy LLMClient!
+2025-05-06 13:44:26,437 CRITICAL forest_app.core.processors.reflection_processor: ReflectionProcessor initialized with invalid or dummy TaskEngine!
+2025-05-06 13:44:26,439 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,439 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,439 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: empty_input | Fallback count: 1
+2025-05-06 13:44:26,439 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: unknown | Fallback count: 2
+2025-05-06 13:44:26,440 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,440 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,441 ERROR forest_app.core.processors.reflection_processor: LLM response validation error: Invalid response format
+2025-05-06 13:44:26,441 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: validation_error | Fallback count: 3
+2025-05-06 13:44:26,442 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,442 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,442 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: unknown | Fallback count: 4
+2025-05-06 13:44:26,443 CRITICAL forest_app.core.processors.completion_processor: CompletionProcessor initialized with invalid or dummy HTAService!
+2025-05-06 13:44:26,443 CRITICAL forest_app.core.processors.completion_processor: CompletionProcessor initialized with invalid or dummy TaskEngine!
+2025-05-06 13:44:26,444 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:44:26,446 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:44:26,447 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,447 ERROR forest_app.core.processors.completion_processor: Error logging task completion: Mock object has no attribute 'log_task_completion'
+2025-05-06 13:44:26,447 WARNING forest_app.core.processors.completion_processor: Task test_task not found in backlog
+2025-05-06 13:44:26,449 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:44:26,454 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,454 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,454 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:44:26,454 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: object Mock can't be used in 'await' expression
+2025-05-06 13:44:26,454 ERROR forest_app.core.processors.reflection_processor: NarrativeModesEngine returned non-dict: <Mock name='mock.determine_narrative_mode()' id='5080275488'>
+2025-05-06 13:44:26,454 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: unknown | Fallback count: 5
+2025-05-06 13:44:26,454 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: object Mock can't be used in 'await' expression
+2025-05-06 13:44:26,454 ERROR forest_app.core.processors.reflection_processor: NarrativeModesEngine returned non-dict: <Mock name='mock.determine_narrative_mode()' id='5080275488'>
+2025-05-06 13:44:26,454 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: unknown | Fallback count: 6
+2025-05-06 13:44:26,454 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: object Mock can't be used in 'await' expression
+2025-05-06 13:44:26,454 ERROR forest_app.core.processors.reflection_processor: NarrativeModesEngine returned non-dict: <Mock name='mock.determine_narrative_mode()' id='5080275488'>
+2025-05-06 13:44:26,454 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: unknown | Fallback count: 7
+2025-05-06 13:44:26,455 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,455 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,455 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,458 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,458 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,458 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:44:26,459 ERROR forest_app.core.processors.reflection_processor: Error processing reflection: First failure
+2025-05-06 13:44:26,459 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: llm_error | Fallback count: 8
+2025-05-06 13:44:26,460 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: HTA failure
+2025-05-06 13:44:26,462 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,463 ERROR forest_app.core.processors.reflection_processor: NarrativeModesEngine returned non-dict: <Mock name='mock.determine_narrative_mode()' id='5080640880'>
+2025-05-06 13:44:26,463 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: unknown | Fallback count: 9
+2025-05-06 13:44:26,463 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: Sentiment analysis failed
+2025-05-06 13:44:26,463 ERROR forest_app.core.processors.reflection_processor: NarrativeModesEngine returned non-dict: <Mock name='mock.determine_narrative_mode()' id='5080640880'>
+2025-05-06 13:44:26,464 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,465 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: object Mock can't be used in 'await' expression
+2025-05-06 13:44:26,465 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: unknown | Fallback count: 10
+2025-05-06 13:44:26,465 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: object Mock can't be used in 'await' expression
+2025-05-06 13:44:26,465 ERROR forest_app.core.processors.reflection_processor: Error determining narrative mode: Narrative mode error
+2025-05-06 13:44:26,467 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,467 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,468 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: object Mock can't be used in 'await' expression
+2025-05-06 13:44:26,468 ERROR forest_app.core.processors.reflection_processor: NarrativeModesEngine returned non-dict: <Mock name='mock.determine_narrative_mode()' id='5080599472'>
+2025-05-06 13:44:26,468 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:44:26,472 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,472 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,472 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: object Mock can't be used in 'await' expression
+2025-05-06 13:44:26,472 ERROR forest_app.core.processors.reflection_processor: NarrativeModesEngine returned non-dict: <Mock name='mock.determine_narrative_mode()' id='5079398048'>
+2025-05-06 13:44:26,472 WARNING forest_app.core.processors.reflection_processor: Fallback triggered in ReflectionProcessor due to: unknown | Fallback count: 11
+2025-05-06 13:44:26,474 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,474 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,474 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:44:26,475 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: object Mock can't be used in 'await' expression
+2025-05-06 13:44:26,475 ERROR forest_app.core.processors.reflection_processor: NarrativeModesEngine returned non-dict: <Mock name='mock.determine_narrative_mode()' id='5080391136'>
+2025-05-06 13:44:26,476 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,481 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but LLMClient (required for XPMastery) is invalid or dummy.
+2025-05-06 13:44:26,482 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,484 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but LLMClient (required for XPMastery) is invalid or dummy.
+2025-05-06 13:44:26,484 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,485 WARNING forest_app.core.processors.completion_processor: Error calculating XP gain for task test_task_1: XP calculation error
+2025-05-06 13:44:26,485 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,486 ERROR forest_app.modules.resource.xp_mastery: Error updating XP Mastery state: could not convert string to float: 'invalid'
+2025-05-06 13:44:26,489 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but LLMClient (required for XPMastery) is invalid or dummy.
+2025-05-06 13:44:26,490 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,490 ERROR forest_app.core.processors.completion_processor: Error evolving HTA tree: Invalid tree data
+2025-05-06 13:44:26,497 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: SENTIMENT_ANALYSIS feature enabled but sentiment engine is invalid or dummy.
+2025-05-06 13:44:26,497 WARNING forest_app.core.processors.reflection_processor: ReflectionProcessor: NARRATIVE_MODES feature enabled but narrative engine is invalid or dummy.
+2025-05-06 13:44:26,497 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:44:26,498 ERROR forest_app.core.processors.reflection_processor: Error in sentiment analysis: object Mock can't be used in 'await' expression
+2025-05-06 13:44:26,498 ERROR forest_app.core.processors.reflection_processor: NarrativeModesEngine returned non-dict: <Mock name='mock.determine_narrative_mode()' id='5080449328'>
+2025-05-06 13:44:26,507 WARNING forest_app.core.processors.completion_processor: CompletionProcessor: XP_MASTERY feature enabled but XPMastery engine is invalid or dummy.
+2025-05-06 13:44:27,038 ERROR forest_app.integrations.llm: Unexpected error during Gemini API call.
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 413, in _execute_gemini_request
+    response: GenerateContentResponse = await retryer(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 58, in __call__
+    do = await self.iter(retry_state=retry_state)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 110, in iter
+    result = await action(retry_state)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 78, in inner
+    return fn(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 61, in __call__
+    result = await fn(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 308, in generate_content_async
+    response = await self._async_client.generate_content(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/async_client.py", line 402, in generate_content
+    response = await rpc(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 158, in retry_target
+    return await target()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/grpc_helpers_async.py", line 165, in error_remapped_callable
+    call = callable_(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/grpc/aio/_channel.py", line 150, in __call__
+    call = UnaryUnaryCall(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/grpc/aio/_call.py", line 574, in __init__
+    self._invocation_task = loop.create_task(self._invoke())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 436, in create_task
+    self._check_closed()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-05-06 13:44:27,044 WARNING forest_app.hta_tree.hta_service: CRITICAL: LLMClient HTA generation failed user 1. Error: An unexpected error occurred during API execution: Event loop is closed. Generating fallback.
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 413, in _execute_gemini_request
+    response: GenerateContentResponse = await retryer(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 58, in __call__
+    do = await self.iter(retry_state=retry_state)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 110, in iter
+    result = await action(retry_state)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 78, in inner
+    return fn(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 61, in __call__
+    result = await fn(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 308, in generate_content_async
+    response = await self._async_client.generate_content(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/async_client.py", line 402, in generate_content
+    response = await rpc(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 158, in retry_target
+    return await target()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/grpc_helpers_async.py", line 165, in error_remapped_callable
+    call = callable_(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/grpc/aio/_channel.py", line 150, in __call__
+    call = UnaryUnaryCall(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/grpc/aio/_call.py", line 574, in __init__
+    self._invocation_task = loop.create_task(self._invoke())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 436, in create_task
+    self._check_closed()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/hta_tree/hta_service.py", line 511, in generate_onboarding_hta
+    hta_response_obj = await self.llm_client.generate(
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 634, in generate
+    return await _protected_generation()
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 618, in _protected_generation
+    raw_response = await self._execute_gemini_request(
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 447, in _execute_gemini_request
+    raise LLMError(f"An unexpected error occurred during API execution: {e}") from e
+forest_app.integrations.llm.LLMError: An unexpected error occurred during API execution: Event loop is closed
+2025-05-06 13:44:27,044 WARNING forest_app.hta_tree.hta_service: CRITICAL: LLMClient HTA generation failed user 1. Error: An unexpected error occurred during API execution: Event loop is closed. Generating fallback.
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 413, in _execute_gemini_request
+    response: GenerateContentResponse = await retryer(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 58, in __call__
+    do = await self.iter(retry_state=retry_state)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 110, in iter
+    result = await action(retry_state)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 78, in inner
+    return fn(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 61, in __call__
+    result = await fn(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 308, in generate_content_async
+    response = await self._async_client.generate_content(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/async_client.py", line 402, in generate_content
+    response = await rpc(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 158, in retry_target
+    return await target()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/grpc_helpers_async.py", line 165, in error_remapped_callable
+    call = callable_(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/grpc/aio/_channel.py", line 150, in __call__
+    call = UnaryUnaryCall(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/grpc/aio/_call.py", line 574, in __init__
+    self._invocation_task = loop.create_task(self._invoke())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 436, in create_task
+    self._check_closed()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/hta_tree/hta_service.py", line 511, in generate_onboarding_hta
+    hta_response_obj = await self.llm_client.generate(
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 634, in generate
+    return await _protected_generation()
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 618, in _protected_generation
+    raw_response = await self._execute_gemini_request(
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 447, in _execute_gemini_request
+    raise LLMError(f"An unexpected error occurred during API execution: {e}") from e
+forest_app.integrations.llm.LLMError: An unexpected error occurred during API execution: Event loop is closed
+2025-05-06 13:44:27,044 ERROR forest_app.hta_tree.hta_service: HTA Tree Failure (Service): generate_onboarding_hta error: An unexpected error occurred during API execution: Event loop is closed | Failure count: 1 | Total ops: 0
+2025-05-06 13:44:27,044 ERROR forest_app.hta_tree.hta_service: HTA Tree Failure (Service): generate_onboarding_hta error: An unexpected error occurred during API execution: Event loop is closed | Failure count: 1 | Total ops: 0
+2025-05-06 13:44:27,045 ERROR forest_app.integrations.llm: Unexpected error during Gemini API call.
+Traceback (most recent call last):
+  File "/Users/bretmeraki/Downloads/ForestFInal copy/forest_app/integrations/llm.py", line 413, in _execute_gemini_request
+    response: GenerateContentResponse = await retryer(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 58, in __call__
+    do = await self.iter(retry_state=retry_state)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 110, in iter
+    result = await action(retry_state)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 78, in inner
+    return fn(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/tenacity/_asyncio.py", line 61, in __call__
+    result = await fn(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/generativeai/generative_models.py", line 308, in generate_content_async
+    response = await self._async_client.generate_content(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/async_client.py", line 402, in generate_content
+    response = await rpc(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/retry/retry_unary_async.py", line 158, in retry_target
+    return await target()
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/google/api_core/grpc_helpers_async.py", line 165, in error_remapped_callable
+    call = callable_(*args, **kwargs)
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/grpc/aio/_channel.py", line 150, in __call__
+    call = UnaryUnaryCall(
+  File "/Users/bretmeraki/Downloads/ForestFInal/.venv/lib/python3.10/site-packages/grpc/aio/_call.py", line 574, in __init__
+    self._invocation_task = loop.create_task(self._invoke())
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 436, in create_task
+    self._check_closed()
+  File "/opt/homebrew/Cellar/python@3.10/3.10.17/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-05-06 13:44:27,045 WARNING forest_app.snapshot.helpers: LLM call for codename failed: An unexpected error occurred during API execution: Event loop is closed. Using fallback.
+2025-05-06 13:44:27,050 WARNING forest_app.hta_tree.task_engine: No candidate HTA nodes found after filtering.
+2025-05-06 13:44:27,050 WARNING forest_app.hta_tree.task_engine: No HTA tasks generated. Generating fallback.
+2025-05-06 13:44:27,050 WARNING forest_app.hta_tree.task_engine: Fallback triggered in TaskEngine due to: normal_fallback | Fallback count: 1
+2025-05-06 13:44:27,056 WARNING forest_app.core.processors.completion_processor: Task nonexistent not found in backlog
+2025-05-06 13:44:27,060 WARNING forest_app.hta_tree.task_engine: No candidate HTA nodes found after filtering.
+2025-05-06 13:44:27,061 WARNING forest_app.hta_tree.task_engine: No HTA tasks generated. Generating fallback.
+2025-05-06 13:44:27,061 WARNING forest_app.hta_tree.task_engine: Fallback triggered in TaskEngine due to: normal_fallback | Fallback count: 2
