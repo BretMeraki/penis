@@ -1,0 +1,9 @@
+{
+   "activate the forest": "activate",
+   "forest, change the decor": "change_decor",
+   "forest, audit the scores": "audit_scores", 
+   "forest, show me the running to-do list": "show_todo",
+   "forest, integrate memory": "integrate_memory",
+   "forest save now": "save_snapshot",
+   "forest list saves": "list_snapshots"
+}

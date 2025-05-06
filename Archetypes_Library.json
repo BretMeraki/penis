@@ -1,0 +1,713 @@
+
+[
+  {
+    "name": "The Sage",
+    "traits": ["wise", "reflective", "patient"],
+    "emotional_priority": 0.6,
+    "shadow": {"pride": 0.2, "arrogance": 0.1},
+    "transformation_style": "calm and insightful",
+    "tag_bias": ["knowledge", "learning"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Warrior",
+    "traits": ["courageous", "assertive", "resilient"],
+    "emotional_priority": 0.5,
+    "shadow": {"anger": 0.3, "impulsivity": 0.2},
+    "transformation_style": "bold and intense",
+    "tag_bias": ["strength", "battle", "action"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Healer",
+    "traits": ["compassionate", "nurturing", "restorative"],
+    "emotional_priority": 0.7,
+    "shadow": {"self_doubt": 0.2, "vulnerability": 0.2},
+    "transformation_style": "gentle and caring",
+    "tag_bias": ["care", "restoration"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Innovator",
+    "traits": ["creative", "forward-thinking", "adaptive"],
+    "emotional_priority": 0.55,
+    "shadow": {"uncertainty": 0.3},
+    "transformation_style": "dynamic and experimental",
+    "tag_bias": ["innovation", "change"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Protector",
+    "traits": ["loyal", "defensive", "steadfast"],
+    "emotional_priority": 0.65,
+    "shadow": {"paranoia": 0.2, "rigidity": 0.15},
+    "transformation_style": "resolute and secure",
+    "tag_bias": ["safety", "commitment"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Explorer",
+    "traits": ["curious", "adventurous", "bold"],
+    "emotional_priority": 0.6,
+    "shadow": {"restlessness": 0.25, "recklessness": 0.15},
+    "transformation_style": "expansive and daring",
+    "tag_bias": ["discovery", "journey"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Visionary",
+    "traits": ["imaginative", "futuristic", "inspirational"],
+    "emotional_priority": 0.65,
+    "shadow": {"detachment": 0.2},
+    "transformation_style": "mystical and inventive",
+    "tag_bias": ["dreams", "innovation"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Mentor",
+    "traits": ["guiding", "supportive", "experienced"],
+    "emotional_priority": 0.7,
+    "shadow": {"overbearing": 0.1},
+    "transformation_style": "empathetic and instructive",
+    "tag_bias": ["wisdom", "support"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Creator",
+    "traits": ["imaginative", "artistic", "resourceful"],
+    "emotional_priority": 0.6,
+    "shadow": {"perfectionism": 0.2},
+    "transformation_style": "expressive and innovative",
+    "tag_bias": ["art", "creation"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Seeker",
+    "traits": ["inquiring", "observant", "sincere"],
+    "emotional_priority": 0.55,
+    "shadow": {"restlessness": 0.2},
+    "transformation_style": "introspective and open",
+    "tag_bias": ["truth", "discovery"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Alchemist",
+    "traits": ["transformative", "resourceful", "mystical"],
+    "emotional_priority": 0.6,
+    "shadow": {"mysticism": 0.25},
+    "transformation_style": "transformative and enigmatic",
+    "tag_bias": ["transmutation", "energy"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Mediator",
+    "traits": ["balanced", "diplomatic", "fair"],
+    "emotional_priority": 0.65,
+    "shadow": {"indecision": 0.2},
+    "transformation_style": "harmonious and conciliatory",
+    "tag_bias": ["balance", "peace"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Conduit",
+    "traits": ["communicative", "transparent", "integrative"],
+    "emotional_priority": 0.55,
+    "shadow": {"ambiguity": 0.2},
+    "transformation_style": "fluid and connected",
+    "tag_bias": ["communication", "unity"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Guardian",
+    "traits": ["protective", "responsible", "steadfast"],
+    "emotional_priority": 0.65,
+    "shadow": {"fear": 0.2},
+    "transformation_style": "watchful and secure",
+    "tag_bias": ["safety", "defense"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Catalyst",
+    "traits": ["energetic", "dynamic", "disruptive"],
+    "emotional_priority": 0.6,
+    "shadow": {"impulsivity": 0.25},
+    "transformation_style": "provocative and transformative",
+    "tag_bias": ["change", "action"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Oracle",
+    "traits": ["intuitive", "mysterious", "insightful"],
+    "emotional_priority": 0.7,
+    "shadow": {"obscurity": 0.2},
+    "transformation_style": "profound and enigmatic",
+    "tag_bias": ["wisdom", "vision"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Dreamer",
+    "traits": ["imaginative", "hopeful", "aspirational"],
+    "emotional_priority": 0.6,
+    "shadow": {"escapism": 0.25},
+    "transformation_style": "ethereal and visionary",
+    "tag_bias": ["dreams", "aspiration"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Reformer",
+    "traits": ["progressive", "change-driven", "assertive"],
+    "emotional_priority": 0.55,
+    "shadow": {"resistance": 0.2},
+    "transformation_style": "energetic and direct",
+    "tag_bias": ["reform", "action"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Strategist",
+    "traits": ["calculating", "methodical", "purposeful"],
+    "emotional_priority": 0.6,
+    "shadow": {"rigidity": 0.2},
+    "transformation_style": "precise and measured",
+    "tag_bias": ["planning", "tactics"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Empath",
+    "traits": ["sensitive", "compassionate", "intuitive"],
+    "emotional_priority": 0.7,
+    "shadow": {"overwhelm": 0.25},
+    "transformation_style": "gentle and receptive",
+    "tag_bias": ["empathy", "caring"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Advocate",
+    "traits": ["passionate", "firm", "ethical"],
+    "emotional_priority": 0.65,
+    "shadow": {"defiance": 0.2},
+    "transformation_style": "assertive and protective",
+    "tag_bias": ["justice", "fairness"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Pioneer",
+    "traits": ["innovative", "trailblazing", "bold"],
+    "emotional_priority": 0.6,
+    "shadow": {"risk": 0.3},
+    "transformation_style": "adventurous and daring",
+    "tag_bias": ["discovery", "exploration"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Luminary",
+    "traits": ["inspiring", "charismatic", "motivating"],
+    "emotional_priority": 0.65,
+    "shadow": {"ego": 0.2},
+    "transformation_style": "radiant and uplifting",
+    "tag_bias": ["inspiration", "leadership"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Navigator",
+    "traits": ["practical", "directional", "analytical"],
+    "emotional_priority": 0.55,
+    "shadow": {"confusion": 0.2},
+    "transformation_style": "logical and steady",
+    "tag_bias": ["guidance", "clarity"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Harmonizer",
+    "traits": ["balanced", "integrative", "peaceful"],
+    "emotional_priority": 0.7,
+    "shadow": {"dissonance": 0.15},
+    "transformation_style": "symphonic and calming",
+    "tag_bias": ["balance", "unity"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Enchanter",
+    "traits": ["magical", "alluring", "mysterious"],
+    "emotional_priority": 0.6,
+    "shadow": {"illusion": 0.25},
+    "transformation_style": "mystical and entrancing",
+    "tag_bias": ["magic", "mystery"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Sage of Shadows",
+    "traits": ["perceptive", "insightful", "grounded"],
+    "emotional_priority": 0.65,
+    "shadow": {"complexity": 0.2},
+    "transformation_style": "nuanced and reflective",
+    "tag_bias": ["depth", "intuition"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Resilient",
+    "traits": ["persistent", "strong-willed", "enduring"],
+    "emotional_priority": 0.6,
+    "shadow": {"stubbornness": 0.2},
+    "transformation_style": "firm and steady",
+    "tag_bias": ["grit", "endurance"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Inspirer",
+    "traits": ["uplifting", "motivational", "optimistic"],
+    "emotional_priority": 0.65,
+    "shadow": {"self_doubt": 0.15},
+    "transformation_style": "encouraging and radiant",
+    "tag_bias": ["optimism", "aspiration"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Collector",
+    "traits": ["observant", "accumulative", "curious"],
+    "emotional_priority": 0.55,
+    "shadow": {"indifference": 0.25},
+    "transformation_style": "detail-oriented and reflective",
+    "tag_bias": ["curiosity", "memory"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Interpreter",
+    "traits": ["analytical", "perceptive", "communicative"],
+    "emotional_priority": 0.6,
+    "shadow": {"ambiguity": 0.2},
+    "transformation_style": "clear and insightful",
+    "tag_bias": ["analysis", "clarity"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Artisan",
+    "traits": ["skilled", "expressive", "meticulous"],
+    "emotional_priority": 0.6,
+    "shadow": {"perfectionism": 0.25},
+    "transformation_style": "crafty and creative",
+    "tag_bias": ["art", "craft"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Vision Weaver",
+    "traits": ["imaginative", "inspirational", "integrative"],
+    "emotional_priority": 0.65,
+    "shadow": {"disorganization": 0.2},
+    "transformation_style": "weaving visions into reality",
+    "tag_bias": ["vision", "unity"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Renegade",
+    "traits": ["revolutionary", "independent", "nonconformist"],
+    "emotional_priority": 0.55,
+    "shadow": {"rebellion": 0.3},
+    "transformation_style": "disruptive and bold",
+    "tag_bias": ["change", "innovation"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Stabilizer",
+    "traits": ["steadfast", "consistent", "balanced"],
+    "emotional_priority": 0.65,
+    "shadow": {"stagnation": 0.2},
+    "transformation_style": "calming and predictable",
+    "tag_bias": ["stability", "order"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Altruist",
+    "traits": ["selfless", "compassionate", "giving"],
+    "emotional_priority": 0.7,
+    "shadow": {"self-sacrifice": 0.2},
+    "transformation_style": "nurturing and kind",
+    "tag_bias": ["helping", "kindness"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Challenger",
+    "traits": ["provocative", "determined", "fearless"],
+    "emotional_priority": 0.55,
+    "shadow": {"defiance": 0.25},
+    "transformation_style": "bold and disruptive",
+    "tag_bias": ["challenge", "action"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Integrator",
+    "traits": ["cohesive", "holistic", "unifying"],
+    "emotional_priority": 0.65,
+    "shadow": {"fragmentation": 0.2},
+    "transformation_style": "unifying and balanced",
+    "tag_bias": ["integration", "wholeness"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Balancer",
+    "traits": ["steady", "equitable", "moderate"],
+    "emotional_priority": 0.65,
+    "shadow": {"extremism": 0.15},
+    "transformation_style": "harmonious and steady",
+    "tag_bias": ["balance", "moderation"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Seer",
+    "traits": ["intuitive", "foreseeing", "mystical"],
+    "emotional_priority": 0.7,
+    "shadow": {"obscurity": 0.2},
+    "transformation_style": "visionary and ethereal",
+    "tag_bias": ["prophecy", "insight"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Oracle",
+    "traits": ["mysterious", "wise", "enigmatic"],
+    "emotional_priority": 0.7,
+    "shadow": {"solitude": 0.2},
+    "transformation_style": "cryptic and profound",
+    "tag_bias": ["mystery", "wisdom"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Emissary",
+    "traits": ["diplomatic", "persuasive", "eloquent"],
+    "emotional_priority": 0.65,
+    "shadow": {"manipulation": 0.15},
+    "transformation_style": "convincing and refined",
+    "tag_bias": ["communication", "influence"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Maverick",
+    "traits": ["unconventional", "bold", "independent"],
+    "emotional_priority": 0.55,
+    "shadow": {"imprudence": 0.3},
+    "transformation_style": "disruptive and innovative",
+    "tag_bias": ["rebellion", "innovation"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Luminary",
+    "traits": ["inspiring", "radiant", "charismatic"],
+    "emotional_priority": 0.65,
+    "shadow": {"arrogance": 0.2},
+    "transformation_style": "uplifting and visionary",
+    "tag_bias": ["leadership", "inspiration"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Navigator",
+    "traits": ["analytical", "methodical", "pragmatic"],
+    "emotional_priority": 0.55,
+    "shadow": {"confusion": 0.2},
+    "transformation_style": "logical and precise",
+    "tag_bias": ["clarity", "direction"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Harmonizer",
+    "traits": ["balanced", "integrative", "soothing"],
+    "emotional_priority": 0.7,
+    "shadow": {"discord": 0.15},
+    "transformation_style": "harmonious and unifying",
+    "tag_bias": ["unity", "balance"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Enchanter",
+    "traits": ["captivating", "mystical", "alluring"],
+    "emotional_priority": 0.6,
+    "shadow": {"distraction": 0.2},
+    "transformation_style": "magical and enticing",
+    "tag_bias": ["charm", "wonder"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Oracle of Dawn",
+    "traits": ["enlightened", "visionary", "hopeful"],
+    "emotional_priority": 0.7,
+    "shadow": {"despair": 0.15},
+    "transformation_style": "radiant and prophetic",
+    "tag_bias": ["future", "inspiration"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Phoenix",
+    "traits": ["reborn", "transformative", "resilient"],
+    "emotional_priority": 0.65,
+    "shadow": {"destruction": 0.2},
+    "transformation_style": "rebellious and regenerative",
+    "tag_bias": ["rebirth", "change"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Sentinel",
+    "traits": ["alert", "protective", "vigilant"],
+    "emotional_priority": 0.65,
+    "shadow": {"suspicion": 0.2},
+    "transformation_style": "steadfast and watchful",
+    "tag_bias": ["guard", "defense"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Mentor of Shadows",
+    "traits": ["wise", "compassionate", "insightful"],
+    "emotional_priority": 0.7,
+    "shadow": {"ambiguity": 0.2},
+    "transformation_style": "deep and contemplative",
+    "tag_bias": ["guidance", "understanding"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Catalyst of Change",
+    "traits": ["provocative", "driving", "energetic"],
+    "emotional_priority": 0.6,
+    "shadow": {"impulsiveness": 0.25},
+    "transformation_style": "dynamic and transformative",
+    "tag_bias": ["action", "progress"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Seer of Horizons",
+    "traits": ["intuitive", "expansive", "mysterious"],
+    "emotional_priority": 0.7,
+    "shadow": {"obscurity": 0.2},
+    "transformation_style": "ethereal and foresighted",
+    "tag_bias": ["prophecy", "insight"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Luminary of Legacy",
+    "traits": ["inspiring", "enduring", "visionary"],
+    "emotional_priority": 0.65,
+    "shadow": {"pride": 0.2},
+    "transformation_style": "radiant and timeless",
+    "tag_bias": ["legacy", "leadership"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Wanderer",
+    "traits": ["restless", "curious", "independent"],
+    "emotional_priority": 0.55,
+    "shadow": {"uncertainty": 0.25},
+    "transformation_style": "free and exploratory",
+    "tag_bias": ["journey", "exploration"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Collector of Memories",
+    "traits": ["observant", "nostalgic", "introspective"],
+    "emotional_priority": 0.6,
+    "shadow": {"melancholy": 0.2},
+    "transformation_style": "reflective and detailed",
+    "tag_bias": ["memories", "storytelling"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Architect",
+    "traits": ["organized", "strategic", "creative"],
+    "emotional_priority": 0.6,
+    "shadow": {"rigidity": 0.2},
+    "transformation_style": "methodical and visionary",
+    "tag_bias": ["structure", "innovation"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Dreamweaver",
+    "traits": ["imaginative", "inspirational", "sensitive"],
+    "emotional_priority": 0.65,
+    "shadow": {"escapism": 0.2},
+    "transformation_style": "surreal and poetic",
+    "tag_bias": ["dreams", "art"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Reformer",
+    "traits": ["progressive", "determined", "visionary"],
+    "emotional_priority": 0.6,
+    "shadow": {"resistance": 0.2},
+    "transformation_style": "dynamic and forward-thinking",
+    "tag_bias": ["change", "evolution"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Strategist",
+    "traits": ["analytical", "methodical", "practical"],
+    "emotional_priority": 0.6,
+    "shadow": {"inflection": 0.15},
+    "transformation_style": "logical and calculated",
+    "tag_bias": ["planning", "tactics"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Empathic Guide",
+    "traits": ["compassionate", "intuitive", "supportive"],
+    "emotional_priority": 0.7,
+    "shadow": {"vulnerability": 0.2},
+    "transformation_style": "gentle and nurturing",
+    "tag_bias": ["empathy", "support"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Advocate of Truth",
+    "traits": ["passionate", "ethical", "determined"],
+    "emotional_priority": 0.65,
+    "shadow": {"skepticism": 0.15},
+    "transformation_style": "assertive and principled",
+    "tag_bias": ["justice", "truth"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Pioneer of Possibility",
+    "traits": ["innovative", "courageous", "exploratory"],
+    "emotional_priority": 0.6,
+    "shadow": {"anxiety": 0.2},
+    "transformation_style": "adventurous and imaginative",
+    "tag_bias": ["possibility", "exploration"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Luminary of Light",
+    "traits": ["inspiring", "hopeful", "radiant"],
+    "emotional_priority": 0.65,
+    "shadow": {"vanity": 0.15},
+    "transformation_style": "uplifting and illuminating",
+    "tag_bias": ["inspiration", "optimism"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Navigator of Souls",
+    "traits": ["insightful", "intuitive", "grounded"],
+    "emotional_priority": 0.6,
+    "shadow": {"confusion": 0.2},
+    "transformation_style": "steady and guiding",
+    "tag_bias": ["guidance", "clarity"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Harmonizer of Hearts",
+    "traits": ["empathetic", "balanced", "unifying"],
+    "emotional_priority": 0.7,
+    "shadow": {"discord": 0.15},
+    "transformation_style": "harmonious and sincere",
+    "tag_bias": ["unity", "balance"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Enchanter of Emotions",
+    "traits": ["charismatic", "mystical", "expressive"],
+    "emotional_priority": 0.6,
+    "shadow": {"misunderstanding": 0.2},
+    "transformation_style": "mystical and evocative",
+    "tag_bias": ["magic", "emotion"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Oracle of Insight",
+    "traits": ["prophetic", "observant", "intuitive"],
+    "emotional_priority": 0.7,
+    "shadow": {"obscurity": 0.2},
+    "transformation_style": "cryptic and profound",
+    "tag_bias": ["insight", "foresight"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Emissary of Unity",
+    "traits": ["integrative", "collaborative", "diplomatic"],
+    "emotional_priority": 0.65,
+    "shadow": {"divisiveness": 0.15},
+    "transformation_style": "inclusive and articulate",
+    "tag_bias": ["unity", "community"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Maverick",
+    "traits": ["independent", "rebellious", "innovative"],
+    "emotional_priority": 0.55,
+    "shadow": {"imprudence": 0.3},
+    "transformation_style": "disruptive and unconventional",
+    "tag_bias": ["innovation", "challenge"],
+    "evolution_history": [],
+    "fusion_status": false
+  },
+  {
+    "name": "The Balancer of Paradox",
+    "traits": ["equitable", "adaptive", "objective"],
+    "emotional_priority": 0.65,
+    "shadow": {"extremism": 0.15},
+    "transformation_style": "even-keeled and nuanced",
+    "tag_bias": ["balance", "perspective"],
+    "evolution_history": [],
+    "fusion_status": false
+  }
+]
