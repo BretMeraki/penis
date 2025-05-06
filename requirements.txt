@@ -1,0 +1,64 @@
+# requirements.txt
+# Updated <DATE_OF_UPDATE> with latest stable versions for unpinned packages.
+
+# Core FastAPI framework and server
+# Using [all] includes many dependencies like pydantic, starlette, uvicorn, etc.
+fastapi[all]==0.111.0  # Example: Use the actual latest stable version found
+
+# Database ORM
+SQLAlchemy==2.0.30   # Example: Use the actual latest stable version found
+
+# HTTP client for LLM integration
+httpx==0.27.0          # Example: Use the actual latest stable version found
+
+# Retry library for LLM integration
+tenacity==8.3.0        # Example: Use the actual latest stable version found
+
+# Testing Dependencies
+pytest==8.0.2
+pytest-asyncio==0.23.5
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Natural Language Toolkit (Optional, for pattern_id.py advanced features)
+# nltk # Uncomment if you actually use NLTK in the backend
+
+# Linter/Formatter (Development tool)
+# ruff # Typically only needed for development, can often be removed from production requirements
+
+# uvicorn - Explicitly listed with standard extras
+uvicorn[standard]==0.30.0 # Example: Use the actual latest stable version found
+
+# PostGres DB Driver
+psycopg2-binary==2.9.9 # Example: Use the actual latest stable version found
+
+# llm library
+google-generativeai==0.6.0 # Example: Use the actual latest stable version found
+
+# --- PINNED AUTH VERSIONS (DO NOT CHANGE UNLESS NECESSARY) ---
+passlib==1.7.4
+argon2-cffi==23.1.0
+python-jose[cryptography]==3.3.0
+# --- END PINNED VERSIONS ---
+
+# --- ADDED SENTRY SDK ---
+# Ensure this version supports the FastAPIIntegration import path used
+sentry-sdk[fastapi] # Example: Use the actual latest stable version found
+# --- END ADDED SENTRY SDK ---
+
+# json repair
+json-repair>=0.7
+
+#database migration
+alembic>=1.13.1
+# NOTE: Removed streamlit and requests - these belong in your frontend's requirements, not the backend.
+
+#dependency injector
+dependency-injector
+pybreaker
+
+#data visualization
+graphviz
+
+# MCP SDK
+mcp[cli]>=1.7.1

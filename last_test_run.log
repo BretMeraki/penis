@@ -1,0 +1,44 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.10.17, pytest-8.0.2, pluggy-1.5.0 -- /Users/bretmeraki/Downloads/ForestFInal/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/bretmeraki/Downloads/ForestFInal copy
+configfile: pytest.ini
+plugins: asyncio-0.23.5, anyio-4.9.0, Faker-37.1.0, cov-4.1.0, mock-3.12.0
+asyncio: mode=strict
+collecting ... collected 33 items
+
+forest_app/core/processors/test_core_loop.py::test_isolated_core_loop PASSED [  3%]
+forest_app/core/processors/test_processors.py::test_reflection_processor_init_validation PASSED [  6%]
+forest_app/core/processors/test_processors.py::test_reflection_processor_empty_input PASSED [  9%]
+forest_app/core/processors/test_processors.py::test_reflection_processor_llm_validation_error PASSED [ 12%]
+forest_app/core/processors/test_processors.py::test_reflection_processor_snapshot_mutation PASSED [ 15%]
+forest_app/core/processors/test_processors.py::test_completion_processor_init_validation PASSED [ 18%]
+forest_app/core/processors/test_processors.py::test_completion_processor_invalid_inputs PASSED [ 21%]
+forest_app/core/processors/test_processors.py::test_completion_processor_withering_update PASSED [ 24%]
+forest_app/core/processors/test_processors.py::test_completion_processor_batch_evolution PASSED [ 27%]
+forest_app/core/processors/test_processors.py::test_reflection_completion_full_cycle PASSED [ 30%]
+forest_app/core/processors/test_processors.py::test_error_recovery_cycle PASSED [ 33%]
+forest_app/core/processors/test_processors.py::test_sentiment_analysis_and_metrics PASSED [ 36%]
+forest_app/core/processors/test_processors.py::test_narrative_modes_and_style PASSED [ 39%]
+forest_app/core/processors/test_processors.py::test_soft_deadline_scheduling PASSED [ 42%]
+forest_app/core/processors/test_processors.py::test_practical_consequence_updates PASSED [ 45%]
+forest_app/core/processors/test_processors.py::test_full_integration_with_all_components PASSED [ 48%]
+forest_app/core/processors/test_processors.py::test_xp_calculation_basic PASSED [ 51%]
+forest_app/core/processors/test_processors.py::test_xp_stage_progression PASSED [ 54%]
+forest_app/core/processors/test_processors.py::test_completion_processor_xp_integration PASSED [ 57%]
+forest_app/core/processors/test_processors.py::test_xp_error_handling PASSED [ 60%]
+forest_app/core/processors/test_processors.py::test_challenge_generation PASSED [ 63%]
+forest_app/core/processors/test_processors.py::test_legacy_xp_mastery PASSED [ 66%]
+forest_app/core/processors/test_processors.py::test_xp_stage_check PASSED [ 69%]
+forest_app/core/processors/test_processors.py::test_full_xp_lifecycle PASSED [ 72%]
+forest_app/core/processors/test_processors.py::test_core_loop_onboarding_to_hta_evolution PASSED [ 75%]
+forest_app/core/processors/test_processors.py::test_core_loop_full_simulation_diagnostic PASSED [ 78%]
+forest_app/core/processors/test_processors.py::test_onboarding_always_issues_first_task PASSED [ 81%]
+tests/test_backend.py::test_complete_task_404 PASSED                     [ 84%]
+tests/test_backend.py::test_onboarding_batch PASSED                      [ 87%]
+tests/test_frontend.py::test_streamlit_app_import PASSED                 [ 90%]
+tests/test_frontend.py::test_no_duplicate_set_page_config PASSED         [ 93%]
+tests/test_frontend.py::test_no_st_cache PASSED                          [ 96%]
+tests/test_hta_lifecycle.py::test_hta_lifecycle PASSED                   [100%]
+
+======================= 33 passed, 13 warnings in 1.52s ========================

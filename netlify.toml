@@ -1,0 +1,11 @@
+[build]
+  command = ""
+  publish = "forest_app/front_end"
+
+[build.environment]
+  # Set any required environment variables here
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
