@@ -1,27 +1,55 @@
 # alembic/env.py
 
 import os  # Import the os module
-import sys  # <-- Add this line
+import sys  # Import sys module
+import importlib.util  # Import for dynamic imports
 
 # Hardcode project root for Docker reliability
 sys.path.insert(0, '/app')
-print("PYTHONPATH:", sys.path)  # Optional: for debugging
+sys.path.insert(0, '.')
+print("PYTHONPATH:", sys.path)  # For debugging
 
 from logging.config import fileConfig
 
 # Import necessary SQLAlchemy components
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
-from sqlalchemy import create_engine # Import create_engine explicitly
+from sqlalchemy import create_engine
 
 # Import Alembic context
 from alembic import context
 
-# --- MODIFY THIS ---
-# Import Base model directly from the models file
-# This avoids importing from forest_app.__init__ which might have circular dependencies
-from forest_app.snapshot.models import Base
-# ---------------
+# --- DIRECT IMPORT FIX ---
+# Try to load the models module directly using importlib
+try:
+    # Try standard import first
+    from sqlalchemy.orm import DeclarativeBase
+    
+    # Define a fallback Base class if import fails
+    class Base(DeclarativeBase):
+        pass
+    
+    # Try to find the models.py file directly
+    model_paths = [
+        '/app/forest_app/snapshot/models.py',  # Docker path
+        os.path.join(os.getcwd(), 'forest_app', 'snapshot', 'models.py')  # Local path
+    ]
+    
+    for model_path in model_paths:
+        if os.path.exists(model_path):
+            print(f"Found models at: {model_path}")
+            # Load the module directly
+            spec = importlib.util.spec_from_file_location("models", model_path)
+            models_module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(models_module)
+            Base = getattr(models_module, 'Base')  # Get the Base class from the loaded module
+            break
+    print(f"Using Base class: {Base}")
+
+except Exception as e:
+    print(f"Error importing models: {e}")
+    raise
+# --- END DIRECT IMPORT FIX ---
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -109,4 +137,3 @@ if context.is_offline_mode():
     run_migrations_offline()
 else:
     run_migrations_online()
-
