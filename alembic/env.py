@@ -3,8 +3,9 @@
 import os  # Import the os module
 import sys  # <-- Add this line
 
-# Add the project root to the Python path to ensure forest_app is importable
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# Hardcode project root for Docker reliability
+sys.path.insert(0, '/app')
+print("PYTHONPATH:", sys.path)  # Optional: for debugging
 
 from logging.config import fileConfig
 
@@ -108,3 +109,4 @@ if context.is_offline_mode():
     run_migrations_offline()
 else:
     run_migrations_online()
+
