@@ -4,7 +4,6 @@ FROM python:3.11-slim-bullseye as builder
 # Set environment variables
 ENV PYTHONDONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PYTHONPATH=/app
 
 WORKDIR /app
 
@@ -21,7 +20,7 @@ RUN pip install --user -r requirements.in
 FROM python:3.11-slim-bullseye
 
 # Set environment variables
-ENV PYTHONDONDONTWRITEBYTECODE=1 \
+ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PYTHONPATH=/app \
     PATH="/root/.local/bin:$PATH"
