@@ -12,7 +12,10 @@ INSTANCE_CONNECTION_NAME="winged-verbena-457705-p3:us-central1:forestapp"
 # Ensure Python path is set correctly and create any missing __init__.py files
 export PYTHONPATH=/app:/app/forest_app:.
 
-# Create __init__.py files in case they're missing (makes modules importable)
+# Create directories first, then create __init__.py files
+mkdir -p /app/forest_app /app/forest_app/snapshot /app/forest_app/core /app/alembic
+
+# Now create __init__.py files in each directory
 for dir in /app/forest_app /app/forest_app/snapshot /app/forest_app/core /app/alembic; do
   if [ ! -f "$dir/__init__.py" ]; then
     echo "# Package initialization" > "$dir/__init__.py"
