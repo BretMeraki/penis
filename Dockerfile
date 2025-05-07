@@ -21,8 +21,7 @@ RUN curl -o /usr/local/bin/cloud-sql-proxy https://storage.googleapis.com/cloud-
 # Install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt && \
-    pip install --no-cache-dir alembic uvicorn
+    pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
 COPY . /app/
