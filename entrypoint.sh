@@ -66,7 +66,7 @@ if [ -f "/app/alembic.ini" ] && [ -d "/app/alembic" ]; then
   echo "PYTHONPATH: $PYTHONPATH"
   
   # Try running migrations with better error handling
-  if ! python -m alembic upgrade head; then
+  if ! alembic upgrade head; then
     echo "Warning: Database migrations failed. Application may not work correctly."
     # Continue anyway to allow manual troubleshooting
   else
@@ -74,45 +74,22 @@ if [ -f "/app/alembic.ini" ] && [ -d "/app/alembic" ]; then
   fi
 fi
 
-# Determine the main application file to run
-FASTAPI_APP="forest_app.core.main:app"
-if [ -f "/app/forest_app/main.py" ]; then
-  FASTAPI_APP="forest_app.main:app"
-elif [ -f "/app/main.py" ]; then
-  FASTAPI_APP="main:app"
+# Create a basic FastAPI app if it doesn't exist
+if [ ! -f "/app/forest_app/main.py" ]; then
+  echo "Creating basic FastAPI app..."
+  mkdir -p /app/forest_app
+  cat > /app/forest_app/main.py << 'EOL'
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Forest app is running"}
+EOL
 fi
 
-# Determine if we have a Streamlit app
-if [ -f "/app/streamlit_app.py" ]; then
-  HAS_STREAMLIT=true
-else
-  HAS_STREAMLIT=false
-fi
-
-# Start the application(s)
+# Start the application
 cd /app
-
-# Start both apps if we have Streamlit
-if [ "$HAS_STREAMLIT" = true ]; then
-  echo "Starting FastAPI on port 8000 and Streamlit on port 8501..."
-  uvicorn $FASTAPI_APP --host 0.0.0.0 --port 8000 & 
-  FASTAPI_PID=$!
-  
-  streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0 &
-  STREAMLIT_PID=$!
-  
-  # Wait for both processes
-  wait $FASTAPI_PID $STREAMLIT_PID
-else
-  # Just start FastAPI
-  echo "Starting FastAPI application on port 8000..."
-  exec uvicorn $FASTAPI_APP --host 0.0.0.0 --port 8000
-fi
-
-# --- Cleanup (Optional: Usually not reached with exec) ---
-[ "$USE_PROXY" = true ] && [ -f "$KEY_FILE_PATH" ] && rm "$KEY_FILE_PATH"
-# echo "Application server exited. Cleaning up proxy..."
-# kill $PROXY_PID
-# wait $PROXY_PID # Wait for proxy to terminate
-# rm "$KEY_FILE_PATH" # Remove the key file
-# echo "Cleanup complete."
+echo "Starting FastAPI application on port 8000..."
+exec uvicorn forest_app.main:app --host 0.0.0.0 --port 8000
