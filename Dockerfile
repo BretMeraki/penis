@@ -1,12 +1,31 @@
-# Use an official Python runtime as a parent image
+# Build stage
+FROM python:3.11-slim-bullseye as builder
+
+# Set environment variables
+ENV PYTHONDONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends gcc python3-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+COPY requirements.in .
+RUN pip install --user -r requirements.in
+
+# Runtime stage
 FROM python:3.11-slim-bullseye
 
-# Set environment variables for Python
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-ENV PYTHONPATH=/app:/app/forest_app
+# Set environment variables
+ENV PYTHONDONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app \
+    PATH="/root/.local/bin:$PATH"
 
-# Set the working directory in the container
 WORKDIR /app
 
 # Install system dependencies
@@ -14,17 +33,16 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends curl ca-certificates graphviz && \
     rm -rf /var/lib/apt/lists/*
 
-# Download and install the Cloud SQL Auth Proxy
-RUN curl -o /usr/local/bin/cloud-sql-proxy https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.15.3/cloud-sql-proxy.linux.amd64 && \
+# Install Cloud SQL Auth Proxy
+RUN curl -o /usr/local/bin/cloud-sql-proxy \
+    https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.15.3/cloud-sql-proxy.linux.amd64 && \
     chmod +x /usr/local/bin/cloud-sql-proxy
 
-# Install Python dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+# Copy installed Python packages from builder
+COPY --from=builder /root/.local /root/.local
 
-# Copy the application code into the container
-COPY . /app/
+# Copy application code
+COPY . .
 
 # Ensure all __init__.py files exist (in case of .dockerignore or missing files)
 RUN find /app -type d -exec sh -c 'f="{}"/__init__.py; [ -f "$f" ] || echo "# Package initialization" > "$f"' \;
@@ -32,16 +50,11 @@ RUN find /app -type d -exec sh -c 'f="{}"/__init__.py; [ -f "$f" ] || echo "# Pa
 # Create necessary directories
 RUN mkdir -p /app/forest_app
 
-# Copy Alembic configuration and migrations if they exist
-COPY alembic.ini /app/alembic.ini
-COPY alembic/ /app/alembic/
-
-# Copy the entrypoint script and make it executable
-COPY entrypoint.sh /app/entrypoint.sh
+# Make entrypoint script executable
 RUN chmod +x /app/entrypoint.sh
 
-# Expose the port the app runs on (should match the port in entrypoint.sh)
-EXPOSE 8000
+# Expose ports
+EXPOSE 8000 8501
 
-# Run the entrypoint script when the container launches
+# Set the entrypoint
 ENTRYPOINT ["/app/entrypoint.sh"]
