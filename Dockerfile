@@ -32,11 +32,13 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
-# First, create the forest_app directory structure
-RUN mkdir -p /app/forest_app
-COPY forest_app/ /app/forest_app/
+# Copy all files from the current directory to /app
+COPY . /app/
 
-# Copy Alembic configuration and migrations
+# Create necessary directories
+RUN mkdir -p /app/forest_app
+
+# Copy Alembic configuration and migrations if they exist
 COPY alembic.ini /app/alembic.ini
 COPY alembic/ /app/alembic/
 
