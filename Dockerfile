@@ -1,6 +1,4 @@
 # Use an official Python runtime as a parent image
-# Choose a version compatible with your application (e.g., 3.11, 3.12)
-# Using slim-bullseye for a smaller image size
 FROM python:3.11-slim-bullseye
 
 # Set environment variables for Python
@@ -12,28 +10,24 @@ ENV PYTHONPATH=/app:/app/forest_app
 WORKDIR /app
 
 # Install system dependencies
-# - curl: needed to download the proxy
-# - ca-certificates: needed for SSL connections by the proxy
-# - graphviz: needed for some Python packages
 RUN apt-get update && \
     apt-get install -y --no-install-recommends curl ca-certificates graphviz && \
     rm -rf /var/lib/apt/lists/*
 
 # Download and install the Cloud SQL Auth Proxy
-# Check for the latest version and correct architecture (amd64) if needed
-# See: https://github.com/GoogleCloudPlatform/cloud-sql-proxy/releases
 RUN curl -o /usr/local/bin/cloud-sql-proxy https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.15.3/cloud-sql-proxy.linux.amd64 && \
     chmod +x /usr/local/bin/cloud-sql-proxy
 
 # Install Python dependencies
-# Copy only requirements first to leverage Docker cache
 COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
-# Copy all files from the current directory to /app
 COPY . /app/
+
+# Ensure all __init__.py files exist (in case of .dockerignore or missing files)
+RUN find /app -type d -exec sh -c 'f="{}"/__init__.py; [ -f "$f" ] || echo "# Package initialization" > "$f"' \;
 
 # Create necessary directories
 RUN mkdir -p /app/forest_app
@@ -50,5 +44,4 @@ RUN chmod +x /app/entrypoint.sh
 EXPOSE 8000
 
 # Run the entrypoint script when the container launches
-# This script will start the proxy and then the application
 ENTRYPOINT ["/app/entrypoint.sh"]
